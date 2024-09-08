@@ -1,4 +1,84 @@
-*{
+html {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #624E2F, #A88D65);
+    color: white;
+    padding: 1rem;
+}
+
+img {
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+#redes_sociais {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem; /* Espaçamento entre as linhas */
+    padding: 1rem;
+}
+.flex{
+    display: flex;
+}
+#redes_sociais p {
+    display: flex;
+    align-items: center; /* Alinha verticalmente com o ícone */
+    gap: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+#elementos_vertical_centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#titulo {
+    font-size: 80px;
+    margin: 3rem 0;
+}
+
+#linha_titulo {
+    border: none;
+    border-top: 2px solid white;
+    width: 60rem;
+    margin: 1rem 0 3rem 0;/*margin: [top] [right] [bottom] [left];*/
+}
+
+#texto_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#texto_section h2 {
+    margin: 1rem 0;
+}
+
+#texto_section p {
+    margin: 0 1rem;
+}
+
+#Imagem_inicial {
+    height: 25rem;
+}
+
+#logo_main {
+    height: 20rem;
+}
+
+#elementos_horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espaçamento entre o texto e a imagem */
+    margin: 0 10rem ;/*margin: [top] [right] [bottom] [left];*/
+
 }
