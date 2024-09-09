@@ -61,6 +61,7 @@ img {
 
 #texto_section h2 {
     margin: 1rem 0;
+    font-size: 2rem;
 }
 
 #texto_section p {
@@ -75,7 +76,7 @@ img {
 }
 
 #logo_main {
-    height: 20rem;
+    height: 16rem;
 }
 
 #elementos_horizontal {
