@@ -91,6 +91,10 @@ img {
         display: flex;
         flex-direction: column;
     }
+    #logo_main {
+        height: 16rem;
+    }
+
     #titulo {
         font-size: 3.5rem;
         margin: 3rem 0;
@@ -108,6 +112,7 @@ img {
 
     #redes_sociais p {
         font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+        justify-content: center;
     }
 
     h3 img {
