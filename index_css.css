@@ -85,7 +85,7 @@ img {
 }
 @media (max-width: 768px) {
     html {
-        font-size: 10px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
     }
     .flex{
         display: flex;
