@@ -85,17 +85,20 @@ img {
 }
 @media (max-width: 768px) {
     html {
-        font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 17px; /* Ajusta o tamanho da fonte para telas menores */
     }
     .flex{
         display: flex;
         flex-direction: column;
     }
-
+    #titulo {
+        font-size: 3.5rem;
+        margin: 3rem 0;
+    }
 
     #linha_titulo {
-        width: 100%; /* A linha ocupará toda a largura disponível */
-    }
+        width: 20rem;
+        }
 
     #elementos_horizontal {
         flex-direction: column; /* Empilha os elementos verticalmente */
