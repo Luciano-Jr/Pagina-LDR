@@ -57,6 +57,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 2.5; /* ou um valor em pixels como 24px */
 }
 
 #texto_section h2 {
@@ -86,6 +87,9 @@ img {
 @media (max-width: 768px) {
     html {
         font-size: 17px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+    header{
+        text-align: center;
     }
     .flex{
         display: flex;
