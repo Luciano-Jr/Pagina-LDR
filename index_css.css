@@ -42,7 +42,7 @@ img {
 }
 
 #titulo {
-    font-size: 80px;
+    font-size: 5rem;
     margin: 3rem 0;
 }
 
@@ -81,4 +81,52 @@ img {
     gap: 1rem; /* Espaçamento entre o texto e a imagem */
     margin: 0 10rem ;/*margin: [top] [right] [bottom] [left];*/
 
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    #titulo {
+        font-size: 5rem; /* Diminui o tamanho da fonte do título */
+        margin: 2rem 0; /* Ajusta a margem */
+    }
+
+    #linha_titulo {
+        width: 100%; /* A linha ocupará toda a largura disponível */
+    }
+
+    #elementos_horizontal {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        margin: 0; /* Remove a margem */
+    }
+
+    #texto_section p {
+        margin: 0 1rem; /* Ajusta a margem do texto */
+    }
+
+    #Imagem_inicial {
+        height: 15rem; /* Diminui a altura da imagem */
+    }
+
+    #redes_sociais {
+        padding: 0.5rem; /* Ajusta o padding */
+    }
+
+    #redes_sociais p {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    #elementos_vertical_centralizado {
+        padding: 0 1rem; /* Adiciona padding horizontal */
+    }
+
+    h3 img {
+        height: 1.5rem; /* Ajusta o tamanho do ícone no h3 */
+        vertical-align: middle; /* Alinha verticalmente o ícone */
+        margin-right: 0.5rem; /* Adiciona um espaço entre o ícone e o texto */
+    }
 }
