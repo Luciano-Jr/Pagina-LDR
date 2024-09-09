@@ -70,6 +70,7 @@ img {
 #Imagem_inicial {
     height: 25rem;
     object-fit: contain; /* Ou use 'contain' se preferir */
+
 }
 
 #logo_main {
@@ -81,20 +82,16 @@ img {
     justify-content: center;
     gap: 1rem; /* Espaçamento entre o texto e a imagem */
     margin: 0 10rem ;/*margin: [top] [right] [bottom] [left];*/
-
 }
 @media (max-width: 768px) {
     html {
-        font-size: 13px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 10px; /* Ajusta o tamanho da fonte para telas menores */
     }
     .flex{
         display: flex;
         flex-direction: column;
     }
-    #titulo {
-        font-size: 5rem; /* Diminui o tamanho da fonte do título */
-        margin: 2rem 0; /* Ajusta a margem */
-    }
+
 
     #linha_titulo {
         width: 100%; /* A linha ocupará toda a largura disponível */
@@ -105,24 +102,9 @@ img {
         margin: 0; /* Remove a margem */
     }
 
-    #texto_section p {
-        margin: 0 1rem; /* Ajusta a margem do texto */
-    }
-
-    #Imagem_inicial {
-        height: 15rem; /* Diminui a altura da imagem */
-    }
-
-    #redes_sociais {
-        padding: 0.5rem; /* Ajusta o padding */
-    }
 
     #redes_sociais p {
         font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
-    }
-
-    #elementos_vertical_centralizado {
-        padding: 0 1rem; /* Adiciona padding horizontal */
     }
 
     h3 img {
