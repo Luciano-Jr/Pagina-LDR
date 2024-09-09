@@ -69,6 +69,7 @@ img {
 
 #Imagem_inicial {
     height: 25rem;
+    object-fit: contain; /* Ou use 'contain' se preferir */
 }
 
 #logo_main {
@@ -84,7 +85,7 @@ img {
 }
 @media (max-width: 768px) {
     html {
-        font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 13px; /* Ajusta o tamanho da fonte para telas menores */
     }
     .flex{
         display: flex;
