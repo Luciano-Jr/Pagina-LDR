@@ -32,9 +32,10 @@ header {
     font-size: 14px; /* Ajuste conforme necessário */
     margin: 0; /* Remove margens padrão */
 }
-#redes_sociais img {
+#redes_sociais img, i {
     margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
 }
+
 
 
 #logo_titulo {
@@ -48,7 +49,7 @@ header {
 }
 
 #logo_main {
-    width: 25rem; /* Tamanho do logo */
+    width: 30rem; /* Tamanho do logo */
 }
 
 #titulo {
@@ -171,7 +172,7 @@ h3 {
 
     /* Ajusta o tamanho da logo no mobile */
     #logo_main {
-        width: 17rem;
+        width: 21rem;
     }
 
     /* Centraliza a logo e o texto */
@@ -218,9 +219,16 @@ h3 {
     }
     .card-container {
         display: flex;
-flex-direction: column;
+        flex-direction: column;
         padding: 20px;
         gap: 20px;
+        align-items: center;
     }
-
+    .card {
+        width: 19rem;
+    }
+    .img_card{
+        width: 100%;
+        height: 200px;
+    }
 }
