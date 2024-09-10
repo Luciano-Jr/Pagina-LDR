@@ -1,106 +1,136 @@
-html {
-    margin: 0;
-    font-size: 20px;
-    font-family: "Ubuntu", sans-serif;
-}
-
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
     background: linear-gradient(to bottom, #624E2F, #A88D65);
     color: white;
-    padding: 1rem;
-}
-
-img {
-    vertical-align: middle; /* Alinha verticalmente com o texto */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Importante para centralização */
 }
 
 #redes_sociais {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Espaçamento entre as linhas */
-    padding: 1rem;
-}
-.flex{
-    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    position: absolute;
+    left: 1rem; /* Redes sociais alinhadas à esquerda */
+    top: 1rem;
 }
 #redes_sociais p {
     display: flex;
-    align-items: center; /* Alinha verticalmente com o ícone */
-    gap: 0.5rem; /* Espaçamento entre o ícone e o texto */
+    align-items: center; /* Alinha o texto verticalmente com o ícone */
+    font-size: 14px; /* Ajuste conforme necessário */
+    margin: 0; /* Remove margens padrão */
+}
+#redes_sociais img {
+    margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
 }
 
-#elementos_vertical_centralizado {
-    display: flex;
-    flex-direction: column;
+
+#logo_titulo {
+    text-align: center;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    margin-bottom: 5rem;
 }
-
-#titulo {
-    font-size: 5rem;
-    margin: 3rem 0;
-}
-
-#linha_titulo {
-    border: none;
-    border-top: 2px solid white;
-    width: 60rem;
-    margin: 1rem 0 3rem 0;/*margin: [top] [right] [bottom] [left];*/
-}
-
-#texto_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#texto_section h2 {
-    margin: 1rem 0;
-    font-size: 2rem;
-}
-
-#texto_section p {
-    margin: 0 1rem;
-    line-height: 2.5; /* ou um valor em pixels como 24px */
-}
-
-#Imagem_inicial {
-    height: 25rem;
-    object-fit: contain; /* Ou use 'contain' se preferir */
-
+#logo_titulo > * {
+    margin: 3rem 0 3rem; /* Aplica margem superior e inferior padrão a todos os filhos */
 }
 
 #logo_main {
-    height: 16rem;
+    width: 25rem; /* Tamanho do logo */
 }
 
-#elementos_horizontal {
+#titulo {
+    margin-top: 0.5rem;
+    font-size: 4rem;
+}
+
+#linha_titulo {
+    width: 80vw;
+    border: 1px solid white;
+    margin: 0.5rem auto; /* Centraliza a linha horizontalmente */
+}
+
+#imagem_inicial {
+    width: 33vw;
+    margin: 2rem auto; /* Centraliza a imagem no header */
+}
+
+
+#secao_img{
     display: flex;
-    justify-content: center;
-    gap: 1rem; /* Espaçamento entre o texto e a imagem */
-    margin: 0 10rem ;/*margin: [top] [right] [bottom] [left];*/
+    align-items: center;
+    text-align: justify;
+    margin: 0 10rem;
+    line-height: 2;
+}
+#texto_section{
+    margin: 0 3rem;
+}
+#texto_section h2{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 1rem;
 }
 @media (max-width: 768px) {
-    *{
+    /* Centraliza tudo no mobile */
+    * {
         text-align: center;
     }
+    
+    /* Ajusta o tamanho da fonte para telas menores */
     html {
-        font-size: 17px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 17px;
     }
-    header{
-        text-align: center;
+
+    /* Modificações no header no mobile */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .flex{
+
+    /* Ajuste para redes sociais no mobile */
+    #redes_sociais {
+        position: static; /* Remove o posicionamento absoluto no mobile */
+        margin-bottom: 1rem; /* Adiciona espaço entre redes sociais e logo */
+        align-items: center;
+    }
+
+    /* Ajusta o tamanho da logo no mobile */
+    #logo_main {
+        width: 17rem;
+    }
+
+    /* Centraliza a logo e o texto */
+    #logo_titulo {
         display: flex;
         flex-direction: column;
     }
-    #logo_main {
-        height: 16rem;
+
+    /* Ajustes adicionais para texto e imagem */
+    #secao_img {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    #imagem_inicial {
+        width: 20rem;
     }
 
     #titulo {
@@ -110,22 +140,22 @@ img {
 
     #linha_titulo {
         width: 20rem;
-        }
-
-    #elementos_horizontal {
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        margin: 0; /* Remove a margem */
     }
 
+    /* Empilha os elementos na horizontal */
+    #elementos_horizontal {
+        flex-direction: column;
+        margin: 0;
+    }
 
+    /* Ajustes no tamanho do texto das redes sociais */
     #redes_sociais p {
-        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
-        justify-content: center;
+        font-size: 14px;
     }
 
     h3 img {
-        height: 1.5rem; /* Ajusta o tamanho do ícone no h3 */
-        vertical-align: middle; /* Alinha verticalmente o ícone */
-        margin-right: 0.5rem; /* Adiciona um espaço entre o ícone e o texto */
+        height: 1.5rem;
+        vertical-align: middle;
+        margin-right: 0.5rem;
     }
 }
