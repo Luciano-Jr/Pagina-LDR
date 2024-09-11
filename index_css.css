@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #e7e6e6;
 }
 
 header {
@@ -84,17 +83,22 @@ header {
     font-size: 2rem;
 }
 
-#trabalhos_titulo{
-    font-size: 3.5rem;
-    margin: 4rem;
-    text-align: center;
-}
+
 h3 img {
     height: 1.5rem;
     vertical-align: middle;
     margin-right: 0.5rem;
 }
+#cards_trabalho{
+    background-color: #5e5e5e;
 
+}
+#trabalhos_titulo{
+    font-size: 3.5rem;
+    padding: 4rem;
+    text-align: center;
+    color: white;
+}
 .card-container {
     margin: 0 5rem;
     display: flex;
