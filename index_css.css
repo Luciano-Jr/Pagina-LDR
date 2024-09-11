@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: #e7e6e6;
 }
 
 header {
@@ -49,7 +50,8 @@ header {
 }
 
 #logo_main {
-    width: 40rem; /* Tamanho do logo */
+    width: 50rem; /* Tamanho do logo */
+    margin: 1rem;
 }
 
 #titulo {
@@ -94,16 +96,20 @@ h3 img {
 }
 
 .card-container {
+    margin: 0 5rem;
     display: flex;
     justify-content: space-around;
     padding: 20px;
     gap: 20px;
 }
 
+
+
 .card {
-    background-color: white;
+    background:linear-gradient(to left, #624E2F, #A88D65);
+    color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     width: 23rem;
     text-align: center;
     overflow: hidden;
@@ -135,7 +141,7 @@ h3 img {
 }
 
 .description p {
-    color: #666;
+    color: #e7e6e6;
     font-size: 14px;
 }
 
@@ -185,12 +191,14 @@ h3 {
     #secao_img {
         display: flex;
         flex-direction: column;
-        margin: 0 1rem;
+        margin: 0 0rem;
     }
-
     #imagem_inicial {
         width: 20rem;
+        margin: 0; /* Centraliza a imagem no header */
     }
+
+
 
     #titulo {
         font-size: 3.5rem;
@@ -211,7 +219,9 @@ h3 {
     #redes_sociais p {
         font-size: 14px;
     }
-
+    #trabalhos_titulo{
+        font-size: 2rem;
+    }
     h3 img {
         height: 1.5rem;
         vertical-align: middle;
