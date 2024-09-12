@@ -76,7 +76,7 @@ header {
 #texto_section{
     margin: 0 3rem;
     line-height: 1.7;
-    text-align: justify;
+    text-align: left;
 }
 #texto_section h2{
     margin-bottom: 2.5rem;
