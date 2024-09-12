@@ -175,7 +175,7 @@ h3 img {
     font-size: 5rem;
 }
 #lista_servicos li{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
     text-align: left;
 }
@@ -279,5 +279,10 @@ h3 {
     #lista_servicos{
         display: flex;
         flex-direction: column;
+    }
+    #lista_servicos li{
+        font-size: 1rem;
+        padding: 1rem 0;
+        text-align: left;
     }
 }
