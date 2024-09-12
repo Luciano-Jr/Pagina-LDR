@@ -84,6 +84,7 @@ header {
 }
 
 
+
 h3 img {
     height: 1.5rem;
     vertical-align: middle;
@@ -99,6 +100,7 @@ h3 img {
     text-align: center;
     color: white;
 }
+
 .card-container {
     margin: 0 5rem;
     display: flex;
@@ -149,9 +151,34 @@ h3 img {
     font-size: 14px;
 }
 
-
-
-
+#secao_servicos{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('media/background.jfif') no-repeat center center;
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    color: white; /* Texto em branco para contraste com a imagem escurecida */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+#trabalhos2_titulo{
+    font-size: 3.5rem;
+    padding: 4rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#lista_servicos{
+    display: flex;
+    justify-content: space-around;
+}
+#lista_servicos ul{
+    padding:0 5rem;
+    font-size: 5rem;
+}
+#lista_servicos li{
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: left;
+}
 h3 {
     margin-top: 1rem;
 }
@@ -226,6 +253,10 @@ h3 {
     #trabalhos_titulo{
         font-size: 2rem;
     }
+    #trabalhos2_titulo{
+        font-size: 2rem;
+    }
+
     h3 img {
         height: 1.5rem;
         vertical-align: middle;
@@ -244,5 +275,9 @@ h3 {
     .img_card{
         width: 100%;
         height: 200px;
+    }
+    #lista_servicos{
+        display: flex;
+        flex-direction: column;
     }
 }
