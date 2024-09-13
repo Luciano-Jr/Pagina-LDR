@@ -158,18 +158,24 @@
 </section>
 </body>
 <script>
-    document.getElementById('whatsapp-button').addEventListener('click', function() {
+    document.addEventListener('DOMContentLoaded', function() {
+      var whatsappButton = document.getElementById('whatsapp-button');
+  
       // Defina os dois links de WhatsApp
       var links = [
         'https://wa.me/5535910017236', // Substitua pelo primeiro número de WhatsApp
-        'https://wa.me/5535988636853'  // Substitua pelo segundo número de WhatsApp
+        'https://wa.me/5535998765432'  // Substitua pelo segundo número de WhatsApp
       ];
   
-      // Escolha aleatoriamente um link
-      var randomLink = links[Math.floor(Math.random() * links.length)];
+      whatsappButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
   
-      // Redirecione para o link selecionado
-      window.location.href = randomLink;
+        // Escolha aleatoriamente um link
+        var randomLink = links[Math.floor(Math.random() * links.length)];
+  
+        // Abra o link em uma nova aba
+        window.open(randomLink, '_blank');
+      });
     });
   </script>
 </html>
