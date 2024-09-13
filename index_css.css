@@ -182,6 +182,24 @@ h3 img {
 h3 {
     margin-top: 1rem;
 }
+#whatsapp-button {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 1000; /* Certifica-se de que o botão fique por cima de outros elementos */
+    background-color: #25D366; /* Cor de fundo semelhante ao WhatsApp */
+    border-radius: 50%; /* Faz o botão ficar circular */
+    padding: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+#whatsapp-button img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+
 @media (max-width: 768px) {
     /* Centraliza tudo no mobile */
     * {
