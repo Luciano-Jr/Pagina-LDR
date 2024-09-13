@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="media/Logo.png" type="image/png">
 
+ 
 </head>
 <body>
-    <a href="https://wa.me/numero-do-whatsapp" target="_blank" id="whatsapp-button">
+    <a href="https://wa.me/5535910017236" target="_blank" id="whatsapp-button">
         <img src="https://cdn-icons-png.flaticon.com/512/154/154858.png" alt="WhatsApp">
     </a>
     <header>
@@ -156,4 +157,19 @@
     </section>
 </section>
 </body>
+<script>
+    document.getElementById('whatsapp-button').addEventListener('click', function() {
+      // Defina os dois links de WhatsApp
+      var links = [
+        'https://wa.me/5535910017236', // Substitua pelo primeiro número de WhatsApp
+        'https://wa.me/5535988636853'  // Substitua pelo segundo número de WhatsApp
+      ];
+  
+      // Escolha aleatoriamente um link
+      var randomLink = links[Math.floor(Math.random() * links.length)];
+  
+      // Redirecione para o link selecionado
+      window.location.href = randomLink;
+    });
+  </script>
 </html>
