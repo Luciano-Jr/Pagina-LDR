@@ -90,8 +90,10 @@ h3 img {
     vertical-align: middle;
     margin-right: 0.5rem;
 }
-#cards_trabalho{
+#secao_trabalho{
     background-color: #313131;
+    color: white;
+    text-align: center;
 }
 #trabalhos_titulo{
     font-size: 3.5rem;
@@ -100,12 +102,12 @@ h3 img {
     color: white;
 }
 
-.card-container {
-    margin: 0 5rem;
+.cards-container {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espaço entre os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding:2rem;
 }
 #filterButtons{
     display: flex;
@@ -128,10 +130,21 @@ h3 img {
 .filter-btn.active {
     background-color: #A88D65; /* Destaque para o botão ativo */
 }
+.filter-btn:hover {
+    background-color: #A88D65; /* Destaque para o botão ativo */
+}
+
+
 
 .card {
     display: none; /* Oculta todos os cards por padrão */
     transition: opacity 0.5s ease;
+    flex: 0 1 calc(30% - 20px); /* Cada card ocupa 33.33% do container menos o espaço entre eles */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .card.show {
@@ -139,10 +152,7 @@ h3 img {
     opacity: 1;
 }
 
-.card-container {
-    padding: 20px 0;
-    display: flex;
-}
+
 .card {
     background:linear-gradient(to left, #624E2F, #A88D65);
     color: white;
@@ -312,7 +322,7 @@ h3 {
         vertical-align: middle;
         margin-right: 0.5rem;
     }
-    .card-container {
+    .cards-container {
         display: flex;
         flex-direction: column;
         padding: 20px;

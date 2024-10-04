@@ -42,8 +42,10 @@
 
         <div id="localizacao"><h3><img src="media/Map pin.svg" alt="Facebook">Pouso Alegre e região</h3></div>
     </header>
-    <section id="cards_trabalho">
+    <section id="secao_trabalho">
         <h1 id="trabalhos_titulo">Alguns dos Nossos Trabalhos</h1>
+        <h1>Selecione o tipo do serviço</h1>
+
         <style>
             /* Estilo básico para os botões de filtro */
             
@@ -56,9 +58,11 @@
             <button class="filter-btn" data-filter="Piso">Piso</button>
             <button class="filter-btn" data-filter="Escada">Escada</button>
             <button class="filter-btn" data-filter="Varanda">Varanda</button>
+            <button class="filter-btn" data-filter="Outros">Outros</button>
+
         </div>
 
-        <div class="card-container">
+        <div class="cards-container">
             <div class="card" data-category="Deck">
                 <div class="img_card">
                     <img src="media/deck_cumaru.jpg" alt="Deck em madeira Cumaru">
@@ -91,10 +95,9 @@
                     <p>Ripado em madeira Tauari, com acabamento em verniz à base de água para preservar a naturalidade da madeira.</p>
                 </div>
             </div>
-        </div>
 
-        <div class="card-container">
-            <div class="card">
+        
+            <div class="card" data-category="Outros">
                 <div class="img_card">
                 <img src="media/sauna.png" alt="Imagem 1">
                 </div>
@@ -115,7 +118,7 @@
                 </div>
             </div>
          
-            <div class="card">
+            <div class="card" data-category="Outros">
                 <div class="img_card">
                 <img src="media/spa.jpg" alt="Imagem 2">
             </div>
@@ -125,12 +128,8 @@
                     </p>
                 </div>
             </div>
-      
-        </div>
 
-
-
-        <div class="card-container">
+        
             <div class="card" data-category="Forro">
                 <div class="img_card">
                 <img src="media/forro linha master.png" alt="Imagem 1">
@@ -141,8 +140,8 @@
                 </div>
             </div>
     
-            <div class="card">
-                <div class="img_card" data-category="Varanda">
+            <div class="card" data-category="Varanda">
+                <div class="img_card" >
                 <img src="media/brise.png" alt="Imagem 2">
             </div>
                 <div class="description">
@@ -161,8 +160,7 @@
                 </div>
             </div>
            
-        </div>
-        <div class="card-container">
+        
             <div class="card" data-category="Forro">
                 <div class="img_card">
                 <img src="media/forro cedrinho.png" alt="Imagem 1">
@@ -192,8 +190,6 @@
                     <p>Piso laminado Amêndola Curaçao</p>
                 </div>
             </div>
-        </div>
-
         </div>
     </section>
     <section id="secao_servicos">
