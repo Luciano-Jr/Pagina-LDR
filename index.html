@@ -112,6 +112,15 @@
                 </div>
             </div>
         </div>
+        <div class="ver_mais">
+        <button id="verMaisBtn" class="ver-mais-btn"> 
+        Ver Mais   
+        <i class="fa fa-angle-double-down"></i>
+
+        </button>
+        </div>
+        <div id="segundaMetade" style="display: none;">
+
         <div class="card-container">
             <div class="card">
                 <div class="img_card">
@@ -157,24 +166,25 @@
     
             <div class="card">
                 <div class="img_card">
-                <img src="media/brise.png" alt="Imagem 2">
+                <img src="media/escada peroba.png" alt="Imagem 2">
             </div>
                 <div class="description">
-                    <h3>Varanda</h3>
-                    <p>Brise vazado na madeira cumaru.</p>
+                    <h3>Escada</h3>
+                    <p>Escada maciça na  madeira peroba Mica com resina acetinada</p>
                 </div>
             </div>
     
             <div class="card">
                 <div class="img_card">
-                <img src="media/deck verniz.png" alt="Imagem 2">
+                <img src="media/piso amêndola curação.png" alt="Imagem 2">
             </div>
                 <div class="description">
-                    <h3>Deck</h3>
-                    <p>Revitalização de Deck com verniz semi brilho natural resistente</p>
+                    <h3>Piso</h3>
+                    <p>Piso laminado Amêndola Curaçao</p>
                 </div>
             </div>
-           
+        </div>
+
         </div>
     </section>
     <section id="secao_servicos">
@@ -217,6 +227,21 @@
         // Abra o link em uma nova aba
         window.open(randomLink, '_blank');
       });
+      document.getElementById("verMaisBtn").addEventListener("click", function() {
+        const segundaMetade = document.getElementById("segundaMetade");
+        const verMaisBtn = document.getElementById("verMaisBtn");
+        segundaMetade.classList.toggle('expandido');
+        this.classList.toggle('expandido');
+
+        if (this.classList.contains('expandido')) {
+                this.childNodes[0].textContent = 'Ver Menos ';
+                segundaMetade.style.display = "block";
+            } else {
+                segundaMetade.style.display = "none";
+                this.childNodes[0].textContent = 'Ver Mais ';
+            }
+
+    });
     });
   </script>
 </html>

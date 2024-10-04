@@ -92,7 +92,6 @@ h3 img {
 }
 #cards_trabalho{
     background-color: #313131;
-
 }
 #trabalhos_titulo{
     font-size: 3.5rem;
@@ -197,6 +196,30 @@ h3 {
     width: 80px;
     height: 80px;
     padding: 10px;
+}
+.ver-mais-btn {
+    display: flex;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color:white;
+    margin:1rem 1rem;
+}
+.ver-mais-btn i{
+    margin:0.5rem 2rem;
+    font-size: 2rem;
+}
+.ver-mais-btn.expandido i {
+    transform: rotate(180deg); /* Rotaciona o ícone em 180 graus */
+}
+
+.ver_mais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
