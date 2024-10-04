@@ -44,30 +44,33 @@
     </header>
     <section id="cards_trabalho">
         <h1 id="trabalhos_titulo">Alguns dos Nossos Trabalhos</h1>
+        <style>
+            /* Estilo básico para os botões de filtro */
+            
+        </style>
+
+        <div id="filterButtons">
+            <button class="filter-btn" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="Deck">Deck</button>
+            <button class="filter-btn" data-filter="Forro">Forro</button>
+            <button class="filter-btn" data-filter="Piso">Piso</button>
+            <button class="filter-btn" data-filter="Escada">Escada</button>
+            <button class="filter-btn" data-filter="Varanda">Varanda</button>
+        </div>
 
         <div class="card-container">
-            <div class="card">
+            <div class="card" data-category="Deck">
                 <div class="img_card">
-                <img src="media/deck_cumaru.jpg" alt="Imagem 1">
+                    <img src="media/deck_cumaru.jpg" alt="Deck em madeira Cumaru">
                 </div>
                 <div class="description">
                     <h3>Deck</h3>
-                    <p>Deck em madeira Cumaru com três demãos de verniz semibrilho, oferecendo alta resistência a raios solares e água, harmonizando-se com a jardinagem e pedras.</p>
+                    <p>Deck em madeira Cumaru com três demãos de verniz semibrilho...</p>
                 </div>
             </div>
+       
     
-            <div class="card">
-                <div class="img_card">
-                <img src="media/spa.jpg" alt="Imagem 2">
-            </div>
-                <div class="description">
-                    <h3>Spa</h3>
-                    <p>Spa revestido com deck de madeira Cumaru, aplicado com verniz semibrilho.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="card">
+            <div class="card" data-category="Forro">
                 <div class="img_card">
                 <img src="media/Forro_madeira.jpg" alt="Imagem 3">
             </div>
@@ -75,6 +78,17 @@
                 <div class="description">
                     <h3>Forro</h3>
                     <p>Forro em madeira Cedrinho mesclado, complementado por pergolado com estrutura metálica no acabamento preto e verniz marítimo acetinado.</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="Forro">
+                <div class="img_card">
+                <img src="media/foro_ripado.png" alt="Imagem 3">
+            </div>
+
+                <div class="description">
+                    <h3>Forro Ripado</h3>
+                    <p>Ripado em madeira Tauari, com acabamento em verniz à base de água para preservar a naturalidade da madeira.</p>
                 </div>
             </div>
         </div>
@@ -91,7 +105,7 @@
                 </div>
             </div>
     
-            <div class="card">
+            <div class="card"  data-category="Escada">
                 <div class="img_card">
                 <img src="media/escada.png" alt="Imagem 2">
             </div>
@@ -100,29 +114,24 @@
                     <p>Escada revestida com madeira multi-estruturada Peroba Mica, aplicada na parte superior frontal e inferior.</p>
                 </div>
             </div>
-    
+         
             <div class="card">
                 <div class="img_card">
-                <img src="media/foro_ripado.png" alt="Imagem 3">
+                <img src="media/spa.jpg" alt="Imagem 2">
             </div>
-
                 <div class="description">
-                    <h3>Forro Ripado</h3>
-                    <p>Ripado em madeira Tauari, com acabamento em verniz à base de água para preservar a naturalidade da madeira.</p>
+                    <h3>Spa</h3>
+                    <p>Spa revestido com deck de madeira Cumaru, aplicado com verniz semibrilho.
+                    </p>
                 </div>
             </div>
+      
         </div>
-        <div class="ver_mais">
-        <button id="verMaisBtn" class="ver-mais-btn"> 
-        Ver Mais   
-        <i class="fa fa-angle-double-down"></i>
 
-        </button>
-        </div>
-        <div id="segundaMetade" style="display: none;">
+
 
         <div class="card-container">
-            <div class="card">
+            <div class="card" data-category="Forro">
                 <div class="img_card">
                 <img src="media/forro linha master.png" alt="Imagem 1">
                 </div>
@@ -133,7 +142,7 @@
             </div>
     
             <div class="card">
-                <div class="img_card">
+                <div class="img_card" data-category="Varanda">
                 <img src="media/brise.png" alt="Imagem 2">
             </div>
                 <div class="description">
@@ -142,7 +151,7 @@
                 </div>
             </div>
     
-            <div class="card">
+            <div class="card" data-category="Deck">
                 <div class="img_card">
                 <img src="media/deck verniz.png" alt="Imagem 2">
             </div>
@@ -154,7 +163,7 @@
            
         </div>
         <div class="card-container">
-            <div class="card">
+            <div class="card" data-category="Forro">
                 <div class="img_card">
                 <img src="media/forro cedrinho.png" alt="Imagem 1">
                 </div>
@@ -164,7 +173,7 @@
                 </div>
             </div>
     
-            <div class="card">
+            <div class="card" data-category="Escada">
                 <div class="img_card">
                 <img src="media/escada peroba.png" alt="Imagem 2">
             </div>
@@ -174,7 +183,7 @@
                 </div>
             </div>
     
-            <div class="card">
+            <div class="card" data-category="Piso">
                 <div class="img_card">
                 <img src="media/piso amêndola curação.png" alt="Imagem 2">
             </div>
@@ -227,21 +236,43 @@
         // Abra o link em uma nova aba
         window.open(randomLink, '_blank');
       });
-      document.getElementById("verMaisBtn").addEventListener("click", function() {
-        const segundaMetade = document.getElementById("segundaMetade");
-        const verMaisBtn = document.getElementById("verMaisBtn");
-        segundaMetade.classList.toggle('expandido');
-        this.classList.toggle('expandido');
+      const filterButtons = document.querySelectorAll('.filter-btn');
 
-        if (this.classList.contains('expandido')) {
-                this.childNodes[0].textContent = 'Ver Menos ';
-                segundaMetade.style.display = "block";
+// Captura todos os cards
+const cards = document.querySelectorAll('.card');
+
+// Adiciona o evento de clique em cada botão de filtro
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove a classe 'active' de todos os botões
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Adiciona a classe 'active' ao botão clicado
+        button.classList.add('active');
+
+        // Captura o valor do filtro do botão clicado
+        const filterValue = button.getAttribute('data-filter');
+
+        // Filtra os cards conforme o valor do filtro
+        cards.forEach(card => {
+            // Se o filtro for 'all', exibe todos os cards
+            if (filterValue === 'all') {
+                card.classList.add('show');
             } else {
-                segundaMetade.style.display = "none";
-                this.childNodes[0].textContent = 'Ver Mais ';
+                // Caso contrário, exibe apenas os cards correspondentes ao filtro
+                if (card.getAttribute('data-category') === filterValue) {
+                    card.classList.add('show');
+                } else {
+                    card.classList.remove('show');
+                }
             }
-
+        });
     });
+});
+
+// Exibe todos os cards inicialmente
+document.querySelector('.filter-btn[data-filter="all"]').click();
+
     });
   </script>
 </html>
