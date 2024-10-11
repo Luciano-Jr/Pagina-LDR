@@ -48,11 +48,6 @@
         <h1 id="trabalhos_titulo">Alguns dos Nossos Trabalhos</h1>
         <h1>Selecione o tipo do serviço</h1>
 
-        <style>
-            /* Estilo básico para os botões de filtro */
-            
-        </style>
-
         <div id="filterButtons">
             <button class="filter-btn" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="Deck">Deck</button>
@@ -192,7 +187,12 @@
                     <p>Piso laminado Amêndola Curaçao</p>
                 </div>
             </div>
-            
+    <!--        
+
+            <button id="verMais" class="ver-mais-btn">Ver Mais</button>
+        <div class="card-container hidden" id="extraCards">
+!-->
+
             <div class="card" data-category="Piso">
                 <div class="img_card">
                 <img src="media/Piso pretrópolis.png" alt="Imagem 2">
@@ -282,6 +282,7 @@
                     <p>Instalação de forro da linha Fashion, da Indusparquet, em madeira Champanhe. O material já vem com nove camadas de verniz aplicadas de fábrica e é utilizado tanto no teto quanto nas paredes.</p>
                 </div>
             </div>
+        <!--    </div> !-->
 
         </div>
     </section>
@@ -362,6 +363,16 @@ filterButtons.forEach(button => {
 // Exibe todos os cards inicialmente
 document.querySelector('.filter-btn[data-filter="all"]').click();
 
+    });
+    document.getElementById("verMais").addEventListener("click", function() {
+        var extraCards = document.getElementById("extraCards");
+        if (extraCards.classList.contains("hidden")) {
+            extraCards.classList.remove("hidden");
+            this.textContent = "Ver Menos";  // Muda o texto do botão
+        } else {
+            extraCards.classList.add("hidden");
+            this.textContent = "Ver Mais";  // Volta o texto para "Ver Mais"
+        }
     });
   </script>
 

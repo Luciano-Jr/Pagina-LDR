@@ -170,7 +170,9 @@ h3 img {
     cursor: pointer;
 }
 
-
+.hidden {
+    display: none;
+}
 
 
 .card {
