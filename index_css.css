@@ -280,6 +280,38 @@ h3 {
     padding: 10px;
 }
 
+#videos-servicos {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#videos-servicos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#videos-servicos h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#videos-servicos .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#videos-servicos .video-item iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 
 @media (max-width: 768px) {
     /* Centraliza tudo no mobile */
