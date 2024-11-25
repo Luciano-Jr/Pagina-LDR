@@ -416,4 +416,11 @@ h3 {
         padding: 1rem 0;
         text-align: left;
     }
+    #videos-servicos .video-item iframe {
+        width: 60%;
+        height: 340%;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 }
