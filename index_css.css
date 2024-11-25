@@ -304,8 +304,8 @@ h3 {
 }
 
 #videos-servicos .video-item iframe {
-    width: 100%;
-    height: 200px;
+    width: 30%;
+    height: 600px;
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
